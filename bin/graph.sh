@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOT_FILE=docs/mac_ip_port_service.dot
-echo 'dagraph mac_ip_port_service {' > $DOT_FILE
+echo 'digraph mac_ip_port_service {' > $DOT_FILE
 echo 'rankdir=LR;';
 echo 'node [shape=box];' >> $DOT_FILE
 cat docs/mac.txt | awk '{printf "\"%s\"\n", $1};' >> $DOT_FILE
